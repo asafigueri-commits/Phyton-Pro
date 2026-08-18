@@ -1,0 +1,9 @@
+while True:
+    cadena = input("Enter a string: ")
+    
+    if len(cadena) > 10:  # Cambiado a '>' porque el enunciado pide cortar si tiene MÁS de 10 caracteres
+        resultado = cadena[:10] + "..."
+    else:
+        resultado = cadena
+    
+    print("Resultado:", resultado)
