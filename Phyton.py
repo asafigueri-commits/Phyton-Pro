@@ -20,6 +20,55 @@ for i in range(5):
 
 
 
+while True:
+    cadena = input("Enter a string: ")
+    
+    if len(cadena) > 10:  # Cambiado a '>' porque el enunciado pide cortar si tiene MÁS de 10 caracteres
+        resultado = cadena[:10] + "..."
+    else:
+        resultado = cadena
+    
+    print("Resultado:", resultado)
+
+
+
+
+
+while True:
+
+    nombre = input("¿Cuál es tu nombre?")
+    edad = int(input("¿Cuántos años tienes?"))
+    
+    edad_el_proximo_ano = edad + 1
+    
+    print("Hola, ", nombre, "¡en un año tendrás ", edad_el_proximo_ano, " años!")
+
+
+
+
+
+
+
+while True:
+    
+    vocales = "aeiouAEIOU"
+    palabra = input("Ingresa una palabra:   ")
+    
+    
+    contador = 0
+    
+    for letra in palabra:
+        if letra in vocales:
+            contador +=1
+    print("Numero de vocales: ", contador)
+        
+
+
+
+
+
+
+
 import random
 caracteres = "+-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
 longitud = int(input("Ingrese la longitud de la contraseña.          "))
