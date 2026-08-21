@@ -68,15 +68,3 @@ while True:
 
 
 
-
-import random
-caracteres = "+-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
-longitud = int(input("Ingrese la longitud de la contraseña.          "))
-
-contrasena_generada =  ""
-
-for i in range(longitud):
-    contrasena_generada += random.choice(caracteres)
-    print("")
-
-print("Tu contrasena generada es:", contrasena_generada)
